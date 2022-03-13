@@ -1,17 +1,17 @@
 import React from "react";
+import "./Navbar.scss";
 import { images } from "../../constants";
-
 const Navbar = () => {
   return (
-    <nav>
-      <div>
+    <nav className="app__navbar">
+      <div className="app__navbar-logo">
         <img src={images.logo} />
       </div>
-      <ul>
-        {["home", "about", "work", "skills", "contact"].map((item) => (
-          <li key={`link-${item}`}>
+      <ul className="app__navbar-links">
+        {["home", "contact", "about", "work", "skills"].map((item) => (
+          <li className="app__flex p-text" key={`link-${item}`}>
             <div />
-            <a href={`#${item}`}></a>
+            <a href={`#${item}`}>{item}</a>
           </li>
         ))}
       </ul>
