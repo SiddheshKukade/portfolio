@@ -1,12 +1,17 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+# BEFORE -> INIT -> COMMAND 
+# before: Use this for tasks that need to run before init and before
+#command. For example, customize the terminal or install global project dependencies.
+# init: Use this for heavy-lifting tasks such as downloading dependencies or compiling source code.
+# command: Use this to start your database or development server
 tasks:
   - name : "React Setup"
-    init: echo 'Front End Setup' # runs during prebuild
-    command: echo 'start script' && cd frontend_react && npm i && npm start
+    init: cd frontend_react && npm install  
+    command: npm start
     
   - name : "Sanity Setup"
-    init: echo 'Back End Setup' # runs during prebuild
-    command: echo 'start script' && cd backend-sanity && npm i && sanity start
+    init: cd backend-sanity && npm i && npm i @sanity/cli
+    command: npm start
     
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
