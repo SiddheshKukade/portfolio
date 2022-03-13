@@ -1,10 +1,16 @@
 import react from 'react';
-import {About , Header , Footer , Skills , Testimonial , Work} from './container'
- const App = () => {
-    return( <h1>Hello World
+import Navbar from './components/Navbar/Navbar';
+import { About } from './container';
+// import Navbar from '../components/Navbar/Navbar';
+// import { About } from '../container';
+// import {About , Header , Footer , Skills , Testimonial , Work} from './container'
 
+ const App = () => {
+    return( <>
+            <Navbar/>
         <About/>
-    </h1>);
+
+    </>);
 
 }
 export default App;
