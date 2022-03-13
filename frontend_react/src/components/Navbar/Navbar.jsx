@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HiMenuAlt4, Hix } from "react-icons/hi";
+import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from "framer-motion";
 import "./Navbar.scss";
 import { images } from "../../constants";
@@ -9,10 +9,10 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.logo} />
+        <img src={images.logo} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {["home", "contact", "about", "work", "skills"].map((item) => (
+        {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
@@ -21,12 +21,23 @@ const Navbar = () => {
       </ul>
 
       <div className="app__navbar-menu">
-        <HiMenuAlt4 onclick={() => setToggle(true)} />
+        <HiMenuAlt4 onClick={() => setToggle(true)} />
         {toggle && (
           <motion.div
             whileInView={{ x: [300, 0] }}
             transition={{ duration: 0.85, ease: "easeOut" }}
-          ></motion.div>
+          >
+            <HiX onClick={() => setToggle(false)} />
+            <ul>
+              {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
+                <li key={item}>
+                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
         )}
       </div>
     </nav>
@@ -34,3 +45,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+{/* HiX is cross button closes the page */ }
+{/* used set toggle in <a> tag because we have to close the menu after clicking the button */ }
+                //  used item  to differnciate above links
