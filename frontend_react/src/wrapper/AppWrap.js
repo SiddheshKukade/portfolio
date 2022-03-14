@@ -3,6 +3,7 @@ import React from 'react'
 
 const AppWrap = (Component, idName, className) => function HOC() {
     return (
+        // id={idName} helps to make word of those dots
         <div id={idName} className={`app__container ${className}`}>
             <SocialMedia />
             {/* TAKING THE ENITRE SECTION AND COMBINING IT  BY GIVING IT AN ID TO IDENTIFY IT AND SCROLL THROUGH UT WITH OUR NAVIGATION DOTS COMPONENT   */}
