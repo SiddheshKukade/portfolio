@@ -1,10 +1,8 @@
 import React from 'react'
 import './Header.scss'
 import { motion } from 'framer-motion';
-
-// import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
-
+import { AppWrap } from '../../wrapper'
 const scaleVariants = {
   whileInView: {
     scale: [0, 1],
@@ -61,9 +59,9 @@ const Header = () => {
             <img src={circle} alt="profile_bg" />
           </div>
         ))}
-      </motion.div> 
+      </motion.div>
     </div>
   )
 }
 
-export default Header
+export default AppWrap(Header, 'home')
