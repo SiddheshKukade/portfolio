@@ -27,10 +27,15 @@ const Navbar = () => {
             whileInView={{ x: [300, 0] }}
             transition={{ duration: 0.85, ease: "easeOut" }}
           >
+            {/* HiX is cross button closes the page */}
+
             <HiX onClick={() => setToggle(false)} />
             <ul>
               {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
                 <li key={item}>
+                  {/* used set toggle in <a> tag because we have to close the menu after clicking the button */}
+                  {/* //  used item  to differnciate above links */}
+
                   <a href={`#${item}`} onClick={() => setToggle(false)}>
                     {item}
                   </a>
@@ -45,6 +50,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-{/* HiX is cross button closes the page */ }
-{/* used set toggle in <a> tag because we have to close the menu after clicking the button */ }
-                //  used item  to differnciate above links
