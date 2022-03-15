@@ -7,7 +7,7 @@ const SocialMedia = () => {
         <div className='app__social'>
             <div><a target="_blank" href='https://github.com/SiddheshKukade'><BsGithub /></a></div>
             <div ><a target="_blank" href='https://instagram.com/SiddheshKukade'><BsInstagram /></a></div>
-            <div ><SiGmail /></div>
+            <div ><a><SiGmail /></a></div>
         </div>
     )
 }
