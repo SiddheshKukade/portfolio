@@ -33,7 +33,7 @@ const Testimonial = () => {
         <>
           <div className="app__testimonial-item app__flex">
             <img src={urlFor(test.imageurl)} alt="personImage" />
-            <div className="app__testimonials-content">
+            <div className="app__testimonial-content">
               <p className="p-text">{test.feedback}</p>
               <div >
                 <h4 className="bold-text">{test.name}</h4>
@@ -52,12 +52,12 @@ const Testimonial = () => {
               <HiChevronRight />
             </div>
           </div>
-          <div className="app__testimonials-brands">
+          <div className="app__testimonial-brands">
             {brands.map((brand) => (
               <motion.div
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 0.5, type: 'tween' }}
-                keu={brand._id}
+                key={brand._id}
               >
                 <img src={urlFor(brand.imgUrl)} alt={brand.name} />
 
@@ -74,4 +74,4 @@ const Testimonial = () => {
 export default AppWrap(
   MotionWrap(Testimonial, "app__testimonial"),
   'testimonial',
-  'app__whitebg')
+  'app__primarybg')
