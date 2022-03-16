@@ -5,7 +5,7 @@
   background-position: center;
   background-repeat: repeat;
 
- // disable the default padding styles
+  // disable the default padding styles
   .app__wrapper {
     padding: 0;
 
@@ -15,7 +15,6 @@
   }
 }
 
-
 .app__header {
   flex: 1;
   width: 100%;
@@ -24,15 +23,18 @@
 
   padding: 6rem 2rem 0rem;
 
-  @media screen and (min-width: 2000px) { //very large
+  @media screen and (min-width: 2000px) {
+    //very large
     padding-top: 8rem;
   }
 
-  @media screen and (max-width: 1200px) { // mobile tab 
+  @media screen and (max-width: 1200px) {
+    // mobile tab
     flex-direction: column;
   }
 
-  @media screen and (max-width: 450px) { // for mobile only
+  @media screen and (max-width: 450px) {
+    // for mobile only
     padding: 6rem 1rem 2rem;
   }
 }
@@ -71,7 +73,7 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   }
 
-  .tag-cmp {  
+  .tag-cmp {
     flex-direction: column;
     margin-top: 3rem;
 
@@ -96,7 +98,8 @@
   }
 }
 
-.app__header-circles {  // for the logo icons
+.app__header-circles {
+  // for the logo icons
   flex: 0.75;
   display: flex;
   flex-direction: column;
@@ -113,7 +116,8 @@
     background: var(--white-color);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 
-    img { //logo
+    img {
+      //logo
       width: 60%;
       height: 60%;
     }
@@ -166,18 +170,20 @@
   }
 }
 
-.app__header-img { //the circle imge on the back
+.app__header-img {
+  //the circle imge on the back
   flex: 1;
   height: 100%;
-//moves the model to the left and the circle to the right
+  //moves the model to the left and the circle to the right
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   position: relative;
 
-  img {//model image
-    width: 100%; 
-    object-fit: contain; 
+  img {
+    //model image
+    width: 100%;
+    object-fit: contain;
     z-index: 1;
   }
 

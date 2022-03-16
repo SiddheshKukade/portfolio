@@ -13,6 +13,8 @@ const scaleVariants = {
     }
   }
 }
+let random = Math.floor(Math.random() * 10);
+let headImg = random % 2 == 0 ? images.profile2 : images.profile1
 const Header = () => {
   return (
     <div className="app__header app__flex" id="home">
@@ -42,7 +44,7 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
-        <img src={images.profile} alt="profile-photo" />
+        <img src={headImg} alt="profile-photo" />
         <motion.img whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: 'easeInOut' }}
           src={images.circle}
