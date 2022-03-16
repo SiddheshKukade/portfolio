@@ -6,3 +6,4 @@
 #### URL 
 [https://siddheshkukade.netlify.app/](https://siddheshkukade.netlify.app/)
  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/36075ced-e2cd-4924-8b3d-7ca84d12d6d0/deploy-status)](https://app.netlify.com/sites/siddheshkukade/deploys)
