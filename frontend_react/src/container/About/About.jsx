@@ -9,7 +9,6 @@ const About = () => {
   useEffect(() => {
     const query = '*[_type == "abouts"]'  // query to get the abouts contents
     client.fetch(query).then(data => {
-      console.log(data)
       setAbout(data)
     })
   }, [])
