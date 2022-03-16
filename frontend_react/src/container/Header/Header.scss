@@ -1,10 +1,19 @@
 #home {
-  height: 100vh;
   position: relative;
   background: url("../../assets/bgIMG.png");
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1224px) {
+    height: 100vh;
+  }
+
+  /* Large screens ----------- */
+  @media only screen and (min-width: 1824px) {
+    height: 100vh;
+  }
 
   // disable the default padding styles
   .app__wrapper {
