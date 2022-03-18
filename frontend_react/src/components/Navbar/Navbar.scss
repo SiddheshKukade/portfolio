@@ -37,7 +37,9 @@
 
   li {
     margin: 0rem 1rem;
-    cursor: pointer;
+    @media (min-width: 1068px) {
+      cursor: pointer;
+    }
     flex-direction: column;
 
     div {
@@ -59,6 +61,9 @@
       &:hover {
         color: var(--secondary-color);
       }
+      // &:focus {
+      //   outline: 0 !important;
+      // }
     }
     &:hover {
       div {
@@ -134,8 +139,8 @@
       flex-direction: column;
       li {
         margin: 1rem;
-        a{
-         color: var(--gray-color);
+        a {
+          color: var(--gray-color);
           text-decoration: none;
           font-size: 1rem;
           text-transform: uppercase;
@@ -145,12 +150,12 @@
 
           &:hover {
             color: var(--secondary-color);
-          } 
+          }
         }
       }
     }
-    // for the .app__navbar-menu  
-     @media screen and (min-width: 900px) {
+    // for the .app__navbar-menu
+    @media screen and (min-width: 900px) {
       display: none;
     }
   }
@@ -158,5 +163,4 @@
   @media screen and (min-width: 900px) {
     display: none;
   }
-  
 }
