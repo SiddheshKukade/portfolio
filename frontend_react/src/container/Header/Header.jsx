@@ -13,7 +13,7 @@ const scaleVariants = {
     }
   }
 }
-const images = [images.profile1 , images.profile1 ,images.profile3 , images.profile4]
+const heroImages = [images.profile1 , images.profile1 ,images.profile3 , images.profile4]
 let random = Math.floor(Math.random() * 3);
 console.log(random)
 // let headImg = random > 5 ? random % 2 == 0 ? images.profile2 : images.profile1 : images
@@ -46,7 +46,7 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
-        <img src={images[random]} alt="profile-photo" />
+        <img src={heroImages[random]} alt="profile-photo" />
         <motion.img whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: 'easeInOut' }}
           src={images.circle}
