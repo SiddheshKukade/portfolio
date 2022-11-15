@@ -1230,10 +1230,10 @@
     "get-random-values" "^1.2.2"
     "lodash" "^4.17.15"
 
-"@sanity/cli@^2.28.0":
-  "integrity" "sha512-3uMn6iPscVn+Y8/X3HbbV3OzMXmuFK3xc6FnwC/cCRfh6IjAcT0NzwdviBF+Fkx1+zCeLFYxe5WYN9LlOSlePQ=="
-  "resolved" "https://registry.npmjs.org/@sanity/cli/-/cli-2.28.0.tgz"
-  "version" "2.28.0"
+"@sanity/cli@^2.35.0":
+  "integrity" "sha512-btMoU2W5PrvQL0J4RpA7tvZlo+27fY/aekU4SOa5DWV7nlUc7lMxljCbWdhkX7cQxR1wY/uKcgZeMPX+BPwaWg=="
+  "resolved" "https://registry.npmjs.org/@sanity/cli/-/cli-2.35.0.tgz"
+  "version" "2.35.0"
 
 "@sanity/client@^3.2.0":
   "integrity" "sha512-qhjyscSwpm8bZ7L6tezIJ0eAYSMUvSILt09NsayPhGIvPynraAKNgArI950/orVYylI8a8NQ1yOzuo0prWsO5A=="
@@ -10403,9 +10403,9 @@
   "version" "0.0.6"
 
 "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta":
-  "integrity" "sha512-HM/hFigTBHZhLXshn9sN37H085+hQGeJHJ/X7LpBWLID/fbc2acUMfU+lGD98X81sKP+pFa9f0DZmCwB9GnbAg=="
-  "resolved" "https://registry.npmjs.org/typescript/-/typescript-4.6.2.tgz"
-  "version" "4.6.2"
+  "integrity" "sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ=="
+  "resolved" "https://registry.npmjs.org/typescript/-/typescript-4.8.4.tgz"
+  "version" "4.8.4"
 
 "ua-parser-js@^0.7.30":
   "integrity" "sha512-qLK/Xe9E2uzmYI3qLeOmI0tEOt+TBBQyUIAh4aAgU05FVYzeZrKUdkAZfBNVGRaHVgV0TDkdEngJSw/SyQchkQ=="
