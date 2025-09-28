@@ -15,7 +15,7 @@ const scaleVariants = {
 };
 const heroImages = [
   images.profile1,
-  images.profile1,
+  images.profile2,
   images.profile3,
   images.profile4,
 ];
